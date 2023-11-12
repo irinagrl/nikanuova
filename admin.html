@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>Nika Nuova</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body>
+    <div class="body__admin">
+
+        <header class="header__admin header">
+            <a href="index.html"> <img src="./images/website-logo.png" class="header__img" alt="website logo"> </a>
+            <p class="header__line"></p>
+
+        </header>
+
+        <!-- <div class="page"> -->
+        <!-- <section class="page__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="works.html" class="menu__item_link">Works</a></li>
+                    <li class="menu__item"><a href="exhibitions.html" class="menu__item_link">Exhibitions</a></li>
+                    <li class="menu__item"><a href="projects.html" class="menu__item_link">Projects</a></li>
+                    <li class="menu__item"><a href="cv.html" class="menu__item_link">CV</a></li>
+                    <li class="menu__item"><a href="press.html" class="menu__item_link" hidden>Press</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__item_link">Contacts</a></li>
+                </ul>
+            </section> -->
+
+        <!-- <section class="page__content"> -->
+        <main class="main">
+            <form class="formPaint" id="formPaint">
+                <fieldset class="form__section">
+                    <legend class="form__section_title">Painting</legend>
+                    <div class="form__item">
+                        <label for="pname" class="form__label">Name</label><br>
+                        <input required type="text" class="form__input" id="pname" name="pname"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="psize" class="form__label">Size</label><br>
+                        <input required type="text" class="form__input" id="psize" name="psize"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="ptextiles" class="form__label">Textiles</label><br>
+                        <input required type="text" class="form__input" id="ptextiles" name="ptextiles"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="ptech" class="form__label">Technique</label><br>
+                        <input required type="text" class="form__input" id="ptech" name="ptech"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="exhib" class="form__label">Exhibition</label><br>
+                        <input required type="text" class="form__input" id="exhib" name="exhib"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="pdescr" class="form__label">Painting's Description
+                            <textarea required type="text" class="form__input" id="pdescr" name="pdescr" rows="5"
+                                cols="50"></textarea><br>
+                    </div>
+                    <div class="form__item form__item_files" id="filesContainer">
+                        <label for="files">Upload images</label><br>
+                        <p class="form__label_details">Supported file formats: JPG, PNG. If multiple files, please
+                            upload at once.</p>
+                        <input required type="file" class="input__files" id="files" name="fileInput" multiple
+                            accept="image/jpeg, image/png" /><br>
+                    </div>
+                </fieldset>
+
+                <!-- <fieldset class="form__section">
+                    <legend class="form__section_title">Exhibition</legend>
+                    <p class="">Where the painting was presented</p>
+                    <div class="form__item">
+                        <label for="afname" class="form__label">Name of the Exhibition</label><br>
+                        <input required type="text" class="form__input" id="afname" name="afname" value="Name"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="afname" class="form__label">Dates of the Exhibition</label><br>
+                        <input required type="text" class="form__input" id="afname" name="afname" value="Name"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="alname" class="form__label">Name of the Gallery</label><br>
+                        <input required type="text" class="form__input" id="alname" name="alname" value="Surname"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="alname" class="form__label">Website of the Gallery</label><br>
+                        <input required type="text" class="form__input" id="alname" name="alname" value="Surname"
+                            onfocus="this.value=''"><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="cactiv" class="form__label">Description of the Exhibition
+                            <textarea required type="text" class="form__input" id="cactiv" name="cactiv" rows="5"
+                                cols="50"></textarea><br>
+                    </div>
+                    <div class="form__item form__item_files" id="filesContainer">
+                        <label for="files">Upload images</label><br>
+                        <p class="form__label_details">Supported file formats: JPG, PNG. If multiple files, please
+                            upload at once.</p>
+                        <input required type="file" class="input__files" id="files" name="fileInput" multiple
+                            accept="image/jpeg, image/png" /><br>
+                    </div>
+                </fieldset> -->
+
+                <div class="form__submit">
+                    <button class="form__button"> Submit
+                        <!-- <span class="c-button__text-submit form__button_text">Send</span>
+                        <span class="c-button__text-message-sent hidden">Message has been sent</span>
+                        <span class="c-button__text-message-not-sent hidden">Message has not been sent</span> -->
+                    </button>
+
+                    <!-- <p class="form__privacy b-contacts-request__form-agreement-text">I have read and agreed with <a
+                            href="static/pdf/privacy-policy-en.pdf" download="finstrument-privacy-policy">Privacy
+                            Policy</a>. -->
+                    <!-- </p> -->
+                </div>
+            </form>
+        </main>
+        </section>
+    </div>
+
+
+    <!-- <footer class="footer">
+            <p class="footer__line"></p>
+            <div class="footer__icons">
+                <a href="https://instagram.com/nikanuovaart" class="contacts__item_link">
+                    <img src="./images/instagram.png" alt="instagram__logo" class="contacts__item_img footer__icon"></a>
+
+                <a href="http://www.facebook.com/nikanuovaart/" class="contacts__item_link">
+                    <img src="./images/facebook.png" alt="facebook__logo" class="contacts__item_img footer__icon"></a>
+
+                <a href="https://www.pinterest.it/NikaNuovaArt/" class="contacts__item_link">
+                    <img src="./images/pinterest.png" alt="pinterest__logo" class="contacts__item_img footer__icon"></a>
+
+                <a href="mailto:nikanuova@gmail.com" class="contacts__item_link">
+                    <img src="./images/email.png" alt="email" class="contacts__item_img footer__icon"></a>
+
+                <a href="tel:+447915441401" class="contacts__item_link">
+                    <img src="./images/phone.png" alt="phone" class="contacts__item_img footer__icon"></a>
+
+                <a href="tel:+393884967605" class="contacts__item_link">
+                    <img src="./images/phone.png" alt="phone" class="contacts__item_img footer__icon"></a>
+            </div>
+        </footer> -->
+    <!-- </div> -->
+
+    <!-- <script src="admin.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "nikanuova",
+  "version": "1.0.0",
+  "description": "Nika Nuova, a textile artist based in Italy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

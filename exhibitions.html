@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>Nika Nuova</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body>
+    <div class="page__body">
+
+        <header class="header">
+            <a href="index.html"> <img src="./images/website-logo.png" class="header__img" alt="website logo"> </a>
+            <p class="header__line"></p>
+
+        </header>
+
+        <div class="page">
+            <section class="page__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="works.html" class="menu__item_link">Works</a></li>
+                    <li class="menu__item"><a href="exhibitions.html" class="menu__item_link menu__exh">Exhibitions</a>
+                    </li>
+                    <li class="menu__item"><a href="projects.html" class="menu__item_link">Projects</a></li>
+                    <li class="menu__item"><a href="cv.html" class="menu__item_link">CV</a></li>
+                    <li class="menu__item"><a href="press.html" class="menu__item_link" hidden>Press</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__item_link">Contacts</a></li>
+                </ul>
+            </section>
+
+            <section class="page__content">
+                <main class="main">
+                    <!-- <div class="gallery"> </div> -->
+                    <div class="cards__container"> </div>
+                </main>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__line"></p>
+            <div class="footer__icons">
+                <a href="https://instagram.com/nikanuovaart" class="contacts__item_link">
+                    <img src="./images/instagram.png" alt="instagram__logo" class="contacts__item_img footer__icon"></a>
+
+                <a href="http://www.facebook.com/nikanuovaart/" class="contacts__item_link">
+                    <img src="./images/facebook.png" alt="facebook__logo" class="contacts__item_img footer__icon"></a>
+
+                <a href="https://www.pinterest.it/NikaNuovaArt/" class="contacts__item_link">
+                    <img src="./images/pinterest.png" alt="pinterest__logo" class="contacts__item_img footer__icon"></a>
+
+                <a href="mailto:nikanuova@gmail.com" class="contacts__item_link">
+                    <img src="./images/email.png" alt="email" class="contacts__item_img footer__icon"></a>
+
+                <a href="tel:+447915441401" class="contacts__item_link">
+                    <img src="./images/phone.png" alt="phone" class="contacts__item_img footer__icon"></a>
+
+                <a href="tel:+393884967605" class="contacts__item_link">
+                    <img src="./images/phone.png" alt="phone" class="contacts__item_img footer__icon"></a>
+            </div>
+        </footer>
+        <template id="card__template">
+            <div class="card">
+                <a href="./exhibition.html" class="card__img_link" target="_self">
+                    <img class="card__img" src="" alt="">
+                </a>
+                <div>
+                    <a href="" class="card__place" target="_blank"></a>
+                    <p class="card__name"></p>
+                </div>
+            </div>
+        </template>
+
+    </div>
+    <script src="exhibitions_cards.js"></script>
+    <script src="script.js"></script>
+    <script src="exhibitions.js"></script>
+</body>
+
+</html>
