@@ -21,6 +21,7 @@ function getCardElement(card) {
     cardElement.querySelector('.card__place').href = card.website;
     cardElement.querySelector('.card__place').innerText = card.place;
     cardElement.querySelector('.card__name').innerText = `${card.name}` + ', ' + `${card.dates}`;
+    cardElement.querySelector('.card__descr').innerText = card.descr;
 
     return cardElement;
 }

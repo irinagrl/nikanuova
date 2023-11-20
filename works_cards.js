@@ -7,17 +7,8 @@ const works = [
         technique: 'hand stitching',
         exhibition: '',
         workDescr: 'The explosion of emotions, the contrast of feelings is exciting. It is difficult to define with one vector, but this is an explosion of overflowing states. We do not allow ourselves to feel simple rejoice, but it is impossible to stop the overwhelming movement of joy that is experienced by the child inside us. Overflowing with emotions, the desire for movement, brightness. As soon as joyful emotions capture us, the next step is a contrasting feeling that tries to break through and unbalance, shatter us from the inside.',
-        imgSrc: ['./images/works/anxious-joy.png', './images/works/anxious-joy-2.png', './images/works/anxious-joy-3.png'],
+        imgSrc: ['./images/works/anxious-joy.png', './images/works/anxious-joy-2.png', './images/works/anxious-joy-3.png', './images/works/anxious-joy-4.png'],
 
-    },
-    {
-        name: 'Dark city/Shimmering City',
-        size: '140х175 cm',
-        textiles: 'silk, chiffon, cotton, velour, gauze',
-        technique: 'hand stitching',
-        exhibition: '',
-        workDescr: 'The dark city. The Shimmering city. The city is never completely dark at night. There are always twinkling lights, lanterns, bright, lively windows. It gives a sense of warmth even if the mood is “November” and everything is very gloomy.',
-        imgSrc: ['./images/works/city.jpg', './images/works/city-2.jpg', './images/works/city-3.jpg', './images/works/city-4.jpg'],
     },
     {
         name: 'Relief/ Release',
@@ -108,5 +99,14 @@ const works = [
         exhibition: '',
         workDescr: 'A tree leaf is a harmonious natural image, a symbol of the naturalness and depth of nature. Looking at it, we experience gentle calm. Plunging into the depths of your own inner nature, you can contemplate water and mountains for endless time. This image clearly traces the trend of folk traditions, the analogy with the textile ethnic blankets technique. Small multi – colored pieces convey the sense of calm and equanimity of nature, a harmonious shimmer of water and greenery colors.',
         imgSrc: ['./images/works/the-leaf-lake.png', './images/works/the-leaf-lake-2.png', './images/works/the-leaf-lake-3.png'],
+    },
+    {
+        name: 'Dark city/Shimmering City',
+        size: '140х175 cm',
+        textiles: 'silk, chiffon, cotton, velour, gauze',
+        technique: 'hand stitching',
+        exhibition: '',
+        workDescr: 'The dark city. The Shimmering city. The city is never completely dark at night. There are always twinkling lights, lanterns, bright, lively windows. It gives a sense of warmth even if the mood is “November” and everything is very gloomy.',
+        imgSrc: ['./images/works/city.jpg', './images/works/city-2.jpg', './images/works/city-3.jpg', './images/works/city-4.jpg'],
     },
 ]

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./vendor/flickity.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Nika Nuova</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
@@ -64,21 +65,42 @@
             </div>
         </footer>
 
-        <template id="card__template">
-            <div class="card">
-                <a href="./work.html" class="card__img_link" target="_self">
-                    <img class="card__img" src="" alt="">
-                </a>
-                <div>
-                    <p class="card__name"></p>
-                </div>
-            </div>
-        </template>
-
+        <div class="popup">
+            <p class="popup__img_close">&#10006;</p>
+            <div class="main-carousel" data-flickity='{ "wrapAround": true }'></div>
+        </div>
     </div>
+
+    <template id="card__template">
+        <div class="card">
+            <div class="card__img_link">
+                <img class="card__img" src="" alt="">
+            </div>
+            <div>
+                <p class="card__name"></p>
+            </div>
+        </div>
+    </template>
+
+    <template id="popupCard__template">
+        <div class="popupCard__container">
+            <h2 class="card__name"></h2><br>
+            <span class="card__size"></span><br>
+            <span class="card__textiles"></span><br>
+            <span class="card__technique"></span><br>
+            <span><a href="" class="card__exhibition" target="_blank"></a></span>
+            <p></p>
+            <p class="">Description: <br>
+                <span class="card__description"></span>
+            </p>
+        </div>
+    </template>
+
+    <script src="./vendor/flickity.pkgd.js"></script>
     <script src="works_cards.js"></script>
     <script src="script.js"></script>
     <script src="works.js"></script>
+
 </body>
 
 </html>

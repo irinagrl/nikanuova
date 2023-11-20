@@ -29,11 +29,11 @@ function getCardElement(card) {
 }
 
 function createImg(img, alt) {
-    const container = document.querySelector('.gallery');
+    const container = document.querySelector('.carousel');
     const cardTemplate = document.querySelector('#gallery__template').content;
     const cardElement = cardTemplate.cloneNode(true);
-    cardElement.querySelector('.card__img').src = img;
-    cardElement.querySelector('.card__img').alt = alt;
+    cardElement.querySelector('.carousel-cell').src = img;
+    cardElement.querySelector('.carousel-cell').alt = alt;
     container.appendChild(cardElement);
 }
 createCard(works[0]);
@@ -55,5 +55,5 @@ function popupCloseHandler() {
 
 }
 
-document.querySelector('.gallery').addEventListener('click', popupOpenHandler);
+document.querySelector('.carousel-cell').addEventListener('click', popupOpenHandler);
 document.querySelector('.popup').addEventListener('click', popupCloseHandler);
