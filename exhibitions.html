@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./vendor/flickity.css">
+
 
     <title>Nika Nuova</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
@@ -36,7 +38,6 @@
 
             <section class="page__content">
                 <main class="main">
-                    <!-- <div class="gallery"> </div> -->
                     <div class="cards__container"> </div>
                 </main>
             </section>
@@ -65,20 +66,36 @@
             </div>
         </footer>
 
-        <template id="card__template">
-            <div class="card">
-                <a href="./exhibition.html" class="card__img_link" target="_self">
-                    <img class="card__img" src="" alt="">
-                </a>
-                <div class="card__text">
-                    <a href="" class="card__place" target="_blank"></a>
-                    <p class="card__name"></p>
-                    <p class="card__descr"></p>
-                </div>
-            </div>
-        </template>
-
+        <div class="popup">
+            <p class="popup__img_close">&#10006;</p>
+        </div>
     </div>
+
+    <template id="card__template">
+        <div class="card">
+            <div class="card__img_link">
+                <img class="card__img" src="" alt="">
+            </div>
+            <div class="card__text">
+                <a href="" class="card__place" target="_blank"></a>
+                <p class="card__name"></p>
+                <p class="card__descr"></p>
+            </div>
+        </div>
+    </template>
+
+    <template id="popupCard__template">
+        <div class="popupCard__container">
+            <div class="card__text">
+                <a href="" class="card__place" target="_blank"></a>
+                <p class="card__name"></p>
+                <p class="card__descr"></p>
+            </div>
+        </div>
+    </template>
+
+    <script src="./vendor/flickity.pkgd.js"></script>
+
     <script src="exhibitions_cards.js"></script>
     <script src="script.js"></script>
     <script src="exhibitions.js"></script>

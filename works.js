@@ -26,15 +26,9 @@ function getCardElement(card) {
 render(cards);
 
 //popup
-//flickity doesn't work with 'addEventListener'
-
-// popupOpenHandler(works[0]);
-
 function cardsContainerClickHandler(evt) {
-    // evt.preventDefault();
     const elm = evt.target.closest('.card');
     const elmImgAlt = elm.querySelector('.card__img').alt;
-    // console.log(elm.querySelector('.card__img').alt);
     for (let i = 0; i < cards.length; i++) {
         if (cards[i].name === elmImgAlt) {
             popupOpenHandler(cards[i]);
@@ -43,15 +37,13 @@ function cardsContainerClickHandler(evt) {
 }
 
 function popupOpenHandler(card) {
-    // event.preventDefault();
-    // let card = cards[0];
     createPopupDiv(card);
 
     const container = document.querySelector('.popup');
     const cardElement = getPopCardElement(card);
     container.appendChild(cardElement);
 
-    document.querySelector('.popup').style.opacity = '1';
+    document.querySelector('.popup').style.visibility = 'visible';
     document.querySelector('.header').style.opacity = '.1';
     document.querySelector('.page').style.opacity = '.1';
     document.querySelector('.footer').style.opacity = '.1';
@@ -73,9 +65,10 @@ function getPopCardElement(card) {
 }
 
 function createPopupDiv(card) {
-    console.log(card)
-
-    const container = document.querySelector('.main-carousel')//('.flickity-slider');
+    const container = document.querySelector('.popup');
+    const slider = document.createElement('div');
+    slider.classList.add('main-carousel');
+    container.appendChild(slider);
     const imgSrc = card.imgSrc;
 
     for (let i = 0; i < imgSrc.length; i++) {
@@ -85,12 +78,18 @@ function createPopupDiv(card) {
         const cardImg = document.createElement('img');
         cardImg.classList.add('carousel-cell-img');
         cardImg.src = imgSrc[i];
-        // cardImg.alt = cards[0].name;
+        cardImg.alt = card.name;
 
-        container.appendChild(cardElement);
+        slider.appendChild(cardElement);
         cardElement.appendChild(cardImg);
 
     }
+
+    var flkty = new Flickity(slider, {
+        imagesLoaded: true,
+        percentPosition: false,
+    });
+
     return container;
 }
 
@@ -99,8 +98,9 @@ function popupCloseHandler() {
     document.querySelector('.header').style.opacity = '1';
     document.querySelector('.page').style.opacity = '1';
     document.querySelector('.footer').style.opacity = '1';
-    document.querySelector('.main-carousel').innerHTML = '';
+    document.querySelector('.main-carousel').remove();
+    document.querySelector('.popupCard__container').remove();
 }
 
-document.querySelector('.cards__container').addEventListener('click', cardsContainerClickHandler);//flickity doesn't work with 'addEventListener'
+document.querySelector('.cards__container').addEventListener('click', cardsContainerClickHandler);
 document.querySelector('.popup__img_close').addEventListener('click', popupCloseHandler);
