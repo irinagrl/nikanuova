@@ -261,7 +261,6 @@ body {
     text-align: center;
     position: absolute;
     right: 0;
-    /* top: 0; */
     font-size: 40px;
 }
 
@@ -274,19 +273,17 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* height: fit-content; */
     position: fixed;
     top: 0px !important;
     max-height: 100vh !important;
     overflow-y: scroll !important;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 50px;
     visibility: hidden;
 
 }
 
-/*        ScrollBar    */
-
+/*        Popup ScrollBar    */
 #scrollbar::-webkit-scrollbar {
     background-color: #202425;
     width: 12px;
@@ -295,7 +292,6 @@ body {
 
 #scrollbar::-webkit-scrollbar-track {
     border-radius: 10px;
-    /* box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3); */
 }
 
 #scrollbar::-webkit-scrollbar-thumb {
@@ -307,25 +303,21 @@ body {
     width: 95%;
     height: 95vh;
     margin-bottom: 100px;
-    /* column-gap: 30px; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
-
 
 .carousel-cell {
-    height: 100%;
-
-    /* width: 60%; */
-    margin-left: 50px;
-
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    margin: auto;
 }
 
-.carousel-cell-img {
 
+.carousel-cell-img {
     max-height: 95vh;
-    /* width: 70%; */
+    max-width: 95vw;
+    margin: auto;
+    display: block;
 }
 
 .popupCard__container {
