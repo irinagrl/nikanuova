@@ -28,10 +28,8 @@ render(cards);
 //popup
 function cardsContainerClickHandler(evt) {
     const elm = evt.target.closest('.card');
-    // console.log(visualViewport.offsetTop);
-    // document.querySelector('.popup').style.top = visualViewport.offsetTop + 'px';
-
     const elmImgAlt = elm.querySelector('.card__img').alt;
+
     for (let i = 0; i < cards.length; i++) {
         if (cards[i].name === elmImgAlt) {
             popupOpenHandler(cards[i]);

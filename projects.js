@@ -46,6 +46,8 @@ function popupOpenHandler(card) {
     const cardElement = getPopCardElement(card);
     container.appendChild(cardElement);
 
+    createPopupGrid(card);
+
     document.querySelector('.popup').style.visibility = 'visible';
     document.querySelector('.header').style.opacity = '.1';
     document.querySelector('.page').style.opacity = '.1';
@@ -60,8 +62,34 @@ function getPopCardElement(card) {
     // cardElement.querySelector('.card__img').alt = card.name;
     cardElement.querySelector('.card__name').innerText = card.name;
     cardElement.querySelector('.card__description').innerText = card.descr;
+    // cardElement.querySelector('.cards__grid').innerText = 'hello world';
+
 
     return cardElement;
+}
+
+function createPopupGrid(card) {
+    const container = document.querySelector('.popup');
+    const grid = document.createElement('div');
+    grid.classList.add('cards__grid');
+    container.appendChild(grid);
+    const imgSrc = card.imgSrc;
+
+    for (let i = 0; i < imgSrc.length; i++) {
+        const cardElement = document.createElement('div');
+        cardElement.classList.add('cards__grid_cell');
+
+        const cardImg = document.createElement('img');
+        cardImg.classList.add('cards__grid_img');
+        cardImg.src = imgSrc[i];
+        cardImg.alt = card.name;
+
+        grid.appendChild(cardElement);
+        cardElement.appendChild(cardImg);
+
+    }
+
+    return container;
 }
 
 function createPopupDiv(card) {
@@ -100,7 +128,15 @@ function popupCloseHandler() {
     document.querySelector('.footer').style.opacity = '1';
     document.querySelector('.main-carousel').remove();
     document.querySelector('.popupCard__container').remove();
+    document.querySelector('.cards__grid').remove();
+
 }
 
+// function cardsGridClickHandler(evt) {
+//     console.log(evt.target)
+//     // evt.target.classList.add('is-selected');
+// }
+
 document.querySelector('.cards__container').addEventListener('click', cardsContainerClickHandler);
+// document.querySelector('.cards__grid').addEventListener('click', cardsGridClickHandler);
 document.querySelector('.popup__img_close').addEventListener('click', popupCloseHandler);
