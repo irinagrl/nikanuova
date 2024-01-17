@@ -1,10 +1,10 @@
 // export 
 const exhibitions = [
     {
-        place: 'Artspace Milano',
-        website: 'https://www.artspacemilano.com/',
-        name: 'DreamArs',
-        dates: '20.10.2023- 04.11.2023',
+        place: 'Hub/Art Milano',
+        website: 'https://www.artspacemilano.com/portfolio/dreamars-iv/',
+        name: 'DREAMERS IV',
+        dates: '20.09. 2023 - 04.10.2023',
         imgSrc: ['./images/exhibitions/dream.jpg', './images/exhibitions/dream1.jpg', './images/exhibitions/dream2.jpg'],
         descr: ' ',
     },
