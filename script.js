@@ -14,28 +14,3 @@ function getCurrentPage() {
     }
 }
 getCurrentPage();
-
-
-
-// render(exhibitions);
-// createExhPage();
-// function cardClickHandler(exhPage, event) {
-//     event.preventDefault();
-//     return exhPage;
-
-
-//     //     const link = './exhibition.html';
-//     //     console.log('link');
-
-//     //     // // const opened =
-//     //     window.open(link, '_self');
-//     //     // const exhText = document.querySelector('.exh__text');
-//     //     // exhText.innerHTML = 'not war';
-//     //     // // opened.document.write(
-//     //     // //     "test"
-//     //     // //     )
-
-//     //     // // return opened;
-// }
-
-// document.querySelector('.cards__container').addEventListener('click', cardClickHandler);

@@ -1,6 +1,26 @@
 // export 
 const works = [
     {
+        name: 'Clouds',
+        size: '130x168 cm',
+        textiles: ' ',
+        technique: 'acrylic on canvas',
+        exhibition: '',
+        workDescr: 'We look up and fold dreams into ornaments. The transparent layers gradually fill in and create volume. No matter, whether you’re soaring into the air or diving into water, you experience a sense of weightlessness.',
+        imgSrc: ['./images/works/clouds.jpg', './images/works/clouds-1.jpg'],
+
+    },
+    {
+        name: 'Faith',
+        size: '160x238 cm',
+        textiles: 'paper, old newspapers',
+        technique: 'paper weaving',
+        exhibition: '',
+        workDescr: 'FAITH is like a fragile substance: clear, white in color and light, giving an ability to fly. Our words, phrases, the flow of information around distort and  stain the reality and faith, it happens in any language, with no exceptions. It doesn’t let us fly.',
+        imgSrc: ['./images/works/faith.jpg', './images/works/faith-1.jpg', './images/works/faith-2.jpg'],
+
+    },
+    {
         name: 'Anxious Joy Diptych',
         size: '140х175 cm',
         textiles: 'silk, chiffon, cotton, velvet',
