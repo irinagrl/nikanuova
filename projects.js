@@ -61,8 +61,11 @@ function getPopCardElement(card) {
 
     // cardElement.querySelector('.card__img').alt = card.name;
     cardElement.querySelector('.card__name').innerText = card.name;
-    cardElement.querySelector('.card__description').innerText = card.descr;
-    // cardElement.querySelector('.cards__grid').innerText = 'hello world';
+    // if (card.descrPopup = true) {
+    //     cardElement.querySelector('.card__description').innerText = card.descr;
+    // } else {
+    //     cardElement.querySelector('.card__description').innerText = null;
+    // }
 
 
     return cardElement;
