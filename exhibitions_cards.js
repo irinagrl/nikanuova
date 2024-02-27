@@ -21,7 +21,7 @@ const exhibitions = [
         website: 'http://www.galleriacael.com',
         name: 'Orizzonti',
         dates: '10.02.2023 – 24.02.2023',
-        imgSrc: ['./images/exhibitions/oriz.jpg', './images/exhibitions/oriz2.jpg'],
+        imgSrc: ['./images/exhibitions/oriz1.jpg', './images/exhibitions/oriz2.jpg'],
         descr: '"Anxious Joy" was chosen for the exhibition "Orizzonti" in Galleria Cael Milan. Horizon, in the visual sense, means the apparent line, circular in nature, that marks the boundaries of visibility from a place of observation and corresponds to the points where the sky appears to touch the earth. In a figurative sense, however, the horizon also means a field of action, scope of knowledge, or "that which is being prepared," referring to the near future. The horizon is also the limit of a quest or concept, that which contains everything within itself and delimits a certain meaning. The horizon always represents a limit, should one, in fact, move the point. ',
     },
     {
