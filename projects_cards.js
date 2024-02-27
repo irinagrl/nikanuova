@@ -4,7 +4,7 @@ const projects = [
         name: 'Sketches',
         imgSrc: ['./images/projects/sketch1.png', './images/projects/sketch2.png', './images/projects/sketch3.png', './images/projects/sketch5.png', './images/projects/sketch6.png', './images/projects/sketch7.png', './images/projects/sketch8.png', './images/projects/sketch1.png', './images/projects/sketch9.png', './images/projects/sketch10.png', './images/projects/sketch11.png', './images/projects/sketch13.png', './images/projects/sketch14.png', './images/projects/sketch15.png', './images/projects/sketch16.png', './images/projects/sketch17.png', './images/projects/sketch18.png', './images/projects/sketch19.png', './images/projects/sketch20.png', './images/projects/sketch21.png', './images/projects/sketch22.png', './images/projects/sketch23.png'],
         descr: 'Sketches of title page artworks and a variety of drawings, that were made in different styles and techniques.',
-        descrPopup: true,
+        // descrPopup: true,
     },
     {
         name: 'Creative Glass',
