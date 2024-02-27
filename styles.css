@@ -288,10 +288,19 @@ video {
     max-width: 500px;
     max-height: 400px;
     /* object-fit: contain; */
-
+    /* padding-top: 10px; */
     /* margin-left: 0px; */
     /* margin-right: auto; */
 }
+
+.card__descr {
+    font-size: 16px;
+    color: #f2f3f4;
+}
+
+/* .card__size {
+    color: red;
+} */
 
 .popup__img_close {
     text-align: center;
