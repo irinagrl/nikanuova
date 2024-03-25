@@ -1,0 +1,123 @@
+.menu__list {
+    visibility: hidden;
+    list-style-type: none;
+    padding-left: 10px;
+    background-color: #141a16;
+    z-index: 10;
+}
+
+.menu__item {
+    line-height: 2em;
+    font-size: 30px;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+.menu__list>li {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 720px) {
+    .menu__item {
+        font-size: 18px;
+    }
+
+    .menu-button-container {
+        display: block;
+    }
+
+    .menu-button {
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .menu__list {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #menu-toggle~.menu__list li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu__list li {
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu__list>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: #fff;
+        background-color: #141a16;
+    }
+
+    .menu-button {
+        margin-right: 10px;
+        position: absolute;
+        top: 55px;
+    }
+}

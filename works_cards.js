@@ -1,7 +1,7 @@
 // export 
 const works = [
     {
-        name: 'Anxious Joy Diptych',
+        name: 'Anxious Joy. Diptych.',
         size: '140х175 cm',
         textiles: 'silk, chiffon, cotton, velvet',
         technique: 'hand stitching',
@@ -34,7 +34,7 @@ const works = [
         workDescr: 'This is as the first warm feeling that fills us after a strong experience. It gently determines the flow of emotions and the direction of sensations. It sparkles with different shades of warm color, thereby creating the illusion of joy, calming down and at the same time setting you up for moving forward. There is still no clear plan of action yet, but lots of warm pieces of canvas excite the imagination, giving us the opportunity to feel the positive direction of our thoughts.',
         imgSrc: ['./images/works/hope.jpg', './images/works/hope.png', './images/works/hope-2.png', './images/works/hope-3.png'],
     }, {
-        name: 'Dark city/Shimmering City',
+        name: 'Dark city/Shimmering City. Diptych',
         size: '140х175 cm',
         textiles: 'silk, chiffon, cotton, velour, gauze',
         technique: 'hand stitching',

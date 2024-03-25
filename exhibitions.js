@@ -20,7 +20,7 @@ function getCardElement(card) {
     cardElement.querySelector('.card__place').href = card.website;
     cardElement.querySelector('.card__place').innerText = card.place;
     cardElement.querySelector('.card__name').innerText = `${card.name}` + ', ' + `${card.dates}`;
-    cardElement.querySelector('.card__descr').innerText = card.descr;
+    // cardElement.querySelector('.card__descr').innerText = card.descr;
 
     return cardElement;
 }
@@ -89,7 +89,11 @@ function createPopupDiv(card) {
 
     var flkty = new Flickity(slider, {
         imagesLoaded: true,
-        percentPosition: false,
+        // percentPosition: false,
+        cellAlign: 'center',
+        contain: true,
+        freeScroll: true,
+        wrapAround: true
     });
 
     return container;
@@ -101,7 +105,7 @@ function popupCloseHandler() {
     document.querySelector('.page').style.opacity = '1';
     document.querySelector('.footer').style.opacity = '1';
     document.querySelector('.main-carousel').remove();
-    document.querySelector('.popupCard__container').remove();
+    // document.querySelector('.popupCard__container').remove();
 }
 
 document.querySelector('.cards__container').addEventListener('click', cardsContainerClickHandler);

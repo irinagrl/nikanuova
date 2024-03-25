@@ -5,7 +5,7 @@ const exhibitions = [
         website: 'https://galeriaazur.art/artist/nika-nuova/',
         name: 'Session 1',
         dates: '26.01.2024 - 23.02.2024',
-        imgSrc: ['./images/exhibitions/session1_03.JPG', './images/exhibitions/session1_01.JPG', './images/exhibitions/session1_02.JPG', './images/exhibitions/session1_04.JPG', './images/exhibitions/session1_05.JPG'],
+        imgSrc: ['./images/exhibitions/SESSION01-OPENING067.JPG', './images/exhibitions/session1_01.JPG', './images/exhibitions/session1_02.JPG', './images/exhibitions/session1_04.JPG', './images/exhibitions/session1_05.JPG'],
         descr: 'The work «FAITH» was presented by "Session 1" in Galeria Azur in Berlin. Berlin is a modern centre of avant-garde creativity.A city that has experienced ups and downs, reflected in its architecture.The capital of the Bauhaus, as artists from different parts of the world see it today.It is this vision that is reflected in the collective exhibition «Session 1».',
     },
     {
@@ -30,7 +30,7 @@ const exhibitions = [
         name: 'Crystal Silence',
         dates: '08.12.2022-02.01.2023',
         imgSrc: ['./images/exhibitions/crystal.jpg', './images/exhibitions/crystal1.jpg'],
-        descr: 'The artwork "Hope" was featured at the "Crystal Night" exhibition in Galeria Azur Madrid. Without warning, the artwork takes us on an ephemeral flâner. Who are those shapes in the paintings? What is the physical limit of abstraction? Who dares to freeze time in an image? Is it possible that different languages can be read in harmony? Close-ups, shadows, a suffocating rhythm, stains, and figurations. Practically without words, the narrative journey emphasizes, questions, and evokes emotions we cannot express with words, but they are clear and precise in their plastic expression. ',
+        descr: 'The artwork "Emptiness" was featured at the "Crystal Night" exhibition in Galeria Azur Madrid. Without warning, the artwork takes us on an ephemeral flâner. Who are those shapes in the paintings? What is the physical limit of abstraction? Who dares to freeze time in an image? Is it possible that different languages can be read in harmony? Close-ups, shadows, a suffocating rhythm, stains, and figurations. Practically without words, the narrative journey emphasizes, questions, and evokes emotions we cannot express with words, but they are clear and precise in their plastic expression. ',
     },
     {
         place: 'Galleria Azur Madrid',

@@ -1,4 +1,4 @@
-// import exhibitions from './exhibitions_cards.js';
+
 
 //highlight active page in menu
 function getCurrentPage() {
@@ -14,3 +14,40 @@ function getCurrentPage() {
     }
 }
 getCurrentPage();
+
+// menu adjustments setting
+function getMenu() {
+    const elmWidth = document.querySelector('.header').offsetWidth;
+    const container = document.querySelector('.menu__list');
+
+    if (elmWidth > 699) {
+        container.style.visibility = 'visible';
+    } else {
+        //do nothing
+    }
+}
+
+getMenu();
+
+
+function reload() {
+    setTimeout(function () {
+        location.reload();
+    }, 100);
+}
+
+window.addEventListener('resize', reload);
+
+function menuOpenHandler() {
+    const container = document.querySelector('.menu__list');
+    if (container.classList.contains('menu_open') === false) {
+        container.classList.add('menu_open');
+        container.style.visibility = 'visible';
+    } else {
+        container.classList.remove('menu_open');
+        container.style.visibility = 'hidden';
+    }
+
+}
+
+document.querySelector('.menu-button').addEventListener('click', menuOpenHandler);

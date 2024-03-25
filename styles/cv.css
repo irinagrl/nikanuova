@@ -1,0 +1,32 @@
+.cv__text {
+    padding-left: 100px;
+}
+
+.cv__photo {
+    max-height: 450px;
+    border-radius: 2px;
+    filter: drop-shadow(0 0 0.75rem #000);
+}
+
+@media screen and (max-width: 700px) {
+    .text {
+        font-size: 16px;
+        line-height: 1.4em;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1110px) {
+    .cv__photo {
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cv__text {
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+}

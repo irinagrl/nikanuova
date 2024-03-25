@@ -1,0 +1,26 @@
+.main__home {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -60px;
+    margin-bottom: -75px;
+    width: fit-content;
+}
+
+.img__home {
+    max-height: 85vh;
+    max-width: 100%;
+}
+
+video {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 720px) {
+
+    .main__home {
+        margin-top: -35px;
+        margin-bottom: -45px;
+    }
+}

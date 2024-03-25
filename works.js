@@ -21,7 +21,8 @@ function getCardElement(card) {
     cardElement.querySelector('.card__img').alt = card.name;
     cardElement.querySelector('.card__name').innerText = card.name;
     cardElement.querySelector('.card__size').innerText = card.size;
-
+    cardElement.querySelector('.card__textiles').innerText = card.textiles;
+    cardElement.querySelector('.card__technique').innerText = card.technique;
 
     return cardElement;
 }
@@ -90,7 +91,11 @@ function createPopupDiv(card) {
 
     var flkty = new Flickity(slider, {
         imagesLoaded: true,
-        percentPosition: false,
+        // percentPosition: false,
+        cellAlign: 'center',
+        contain: true,
+        freeScroll: true,
+        wrapAround: true
     });
 
     return container;
@@ -102,7 +107,7 @@ function popupCloseHandler() {
     document.querySelector('.page').style.opacity = '1';
     document.querySelector('.footer').style.opacity = '1';
     document.querySelector('.main-carousel').remove();
-    document.querySelector('.popupCard__container').remove();
+    // document.querySelector('.popupCard__container').remove();
 }
 
 document.querySelector('.cards__container').addEventListener('click', cardsContainerClickHandler);
