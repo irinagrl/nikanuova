@@ -72,14 +72,14 @@ body {
 }
 
 .page__body {
-    max-width: 1230px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
 
 .page {
-    max-width: 1230px;
+    max-width: 1280px;
 
     display: flex;
     justify-content: space-between;
@@ -129,5 +129,13 @@ body {
     .main__flex {
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
     }
 }

@@ -105,7 +105,7 @@ function popupCloseHandler() {
     document.querySelector('.page').style.opacity = '1';
     document.querySelector('.footer').style.opacity = '1';
     document.querySelector('.main-carousel').remove();
-    // document.querySelector('.popupCard__container').remove();
+    document.querySelector('.popupCard__container').remove();
 }
 
 document.querySelector('.cards__container').addEventListener('click', cardsContainerClickHandler);

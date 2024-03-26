@@ -43,9 +43,9 @@ function cardsContainerClickHandler(evt) {
 function popupOpenHandler(card) {
     createPopupDiv(card);
 
-    // const container = document.querySelector('.popup');
-    // // const cardElement = getPopCardElement(card);
-    // container.appendChild(cardElement);
+    const container = document.querySelector('.popup');
+    const cardElement = getPopCardElement(card);
+    container.appendChild(cardElement);
 
     // createPopupGrid(card);
 
@@ -56,45 +56,13 @@ function popupOpenHandler(card) {
 
 }
 
-// function getPopCardElement(card) {
-//     const cardTemplate = document.querySelector('#popupCard__template').content;
-//     const cardElement = cardTemplate.cloneNode(true);
+function getPopCardElement(card) {
+    const cardTemplate = document.querySelector('#popupCard__template').content;
+    const cardElement = cardTemplate.cloneNode(true);
 
-//     // cardElement.querySelector('.card__img').alt = card.name;
-//     cardElement.querySelector('.card__name').innerText = card.name;
-//     // if (card.descrPopup = true) {
-//     //     cardElement.querySelector('.card__description').innerText = card.descr;
-//     // } else {
-//     //     cardElement.querySelector('.card__description').innerText = null;
-//     // }
-
-
-//     return cardElement;
-// }
-
-// function createPopupGrid(card) {
-//     const container = document.querySelector('.popup');
-//     const grid = document.createElement('div');
-//     grid.classList.add('cards__grid');
-//     container.appendChild(grid);
-//     const imgSrc = card.imgSrc;
-
-//     for (let i = 0; i < imgSrc.length; i++) {
-//         const cardElement = document.createElement('div');
-//         cardElement.classList.add('cards__grid_cell');
-
-//         const cardImg = document.createElement('img');
-//         cardImg.classList.add('cards__grid_img');
-//         cardImg.src = imgSrc[i];
-//         cardImg.alt = card.name;
-
-//         grid.appendChild(cardElement);
-//         cardElement.appendChild(cardImg);
-
-//     }
-
-//     return container;
-// }
+    cardElement.querySelector('.card__name').innerText = card.name;
+    return cardElement;
+}
 
 function createPopupDiv(card) {
     const container = document.querySelector('.popup');
@@ -163,9 +131,7 @@ function popupCloseHandler() {
     document.querySelector('.main-carousel').remove();
     document.querySelector('.carousel-nav').remove();
 
-    // document.querySelector('.popupCard__container').remove();
-    // document.querySelector('.cards__grid').remove();
-
+    document.querySelector('.popupCard__container').remove();
 }
 
 document.querySelector('.cards__container').addEventListener('click', cardsContainerClickHandler);
