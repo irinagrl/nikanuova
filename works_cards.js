@@ -5,7 +5,7 @@ const works = [
         size: '140х175 cm',
         textiles: 'silk, chiffon, cotton, velvet',
         technique: 'hand stitching',
-        exhibition: '',
+        exhibition: 'Vogue 3 edition, Orizzonti',
         workDescr: 'The explosion of emotions, the contrast of feelings is exciting. It is difficult to define with one vector, but this is an explosion of overflowing states. We do not allow ourselves to feel simple rejoice, but it is impossible to stop the overwhelming movement of joy that is experienced by the child inside us. Overflowing with emotions, the desire for movement, brightness. As soon as joyful emotions capture us, the next step is a contrasting feeling that tries to break through and unbalance, shatter us from the inside.',
         imgSrc: ['./images/works/joy.jpg', './images/works/anxious-joy.png', './images/works/anxious-joy-2.png', './images/works/anxious-joy-3.png', './images/works/anxious-joy-4.png'],
 
@@ -14,7 +14,7 @@ const works = [
         size: '125х50 cm',
         textiles: 'silk, chiffon, cotton',
         technique: 'hand stitching and embroidery',
-        exhibition: '',
+        exhibition: 'Crystal night, Les variations textiles',
         workDescr: 'The emptiness of sensations. It almost never happens, there is no vacuum of emotions, however, sometimes we experience emptiness (devastation). Small tendencies of emotions at this moment exist as a hint, as an expression of possibility, not correct, not explicit, not readable…',
         imgSrc: ['./images/works/emptiness.jpg', './images/works/emptiness.png', './images/works/emptiness-2.png', './images/works/emptiness-3.png'],
     }, {
@@ -22,7 +22,7 @@ const works = [
         size: '125х50 cm',
         textiles: 'silk, chiffon, cotton',
         technique: 'hand stitching',
-        exhibition: '',
+        exhibition: 'Vogue 3 edition, Heartbeat',
         workDescr: 'A brief temporary chaos of feelings that has not yet turned into anger, frustration or solace. It is still not easy to cope with feelings and realize what it will lead to. At this moment one experiences clear division of feelings into fragmentary, contradictory parts which still do not allow aggression to break out.Active negativity and inability to find a positive trend of feelings are already forming.',
         imgSrc: ['./images/works/irritation.jpg', './images/works/irritation.png', './images/works/irritation-2.png', './images/works/irritation-3.png'],
     }, {
@@ -30,7 +30,7 @@ const works = [
         size: '125х50 cm',
         textiles: 'silk, chiffon, cotton, velvet',
         technique: 'hand stitching',
-        exhibition: '',
+        exhibition: 'Heartbeat',
         workDescr: 'This is as the first warm feeling that fills us after a strong experience. It gently determines the flow of emotions and the direction of sensations. It sparkles with different shades of warm color, thereby creating the illusion of joy, calming down and at the same time setting you up for moving forward. There is still no clear plan of action yet, but lots of warm pieces of canvas excite the imagination, giving us the opportunity to feel the positive direction of our thoughts.',
         imgSrc: ['./images/works/hope.jpg', './images/works/hope.png', './images/works/hope-2.png', './images/works/hope-3.png'],
     }, {
@@ -40,13 +40,13 @@ const works = [
         technique: 'hand stitching',
         exhibition: '',
         workDescr: 'The dark city. The Shimmering city. The city is never completely dark at night. There are always twinkling lights, lanterns, bright, lively windows. It gives a sense of warmth even if the mood is “November” and everything is very gloomy.',
-        imgSrc: ['./images/works/city.jpg', './images/works/city-2.jpg', './images/works/city-3.jpg', './images/works/city-4.jpg'],
+        imgSrc: ['./images/works/city.jpg', './images/works/city-3.jpg', './images/works/city-4.jpg'],
     }, {
         name: 'Faith',
         size: '160x238 cm',
         textiles: 'paper, old newspapers',
         technique: 'paper weaving',
-        exhibition: '',
+        exhibition: 'Session 1',
         workDescr: 'FAITH is like a fragile substance: clear, white in color and light, giving an ability to fly. Our words, phrases, the flow of information around distort and  stain the reality and faith, it happens in any language, with no exceptions. It doesn’t let us fly.',
         imgSrc: ['./images/works/faith.jpg', './images/works/faith-3.jpg', './images/works/faith-1.jpg', './images/works/faith-2.jpg'],
 
@@ -102,8 +102,8 @@ const works = [
     }, {
         name: 'Gaeta',
         size: '250х100 cm',
-        textiles: 'canvas',
-        technique: 'acrylic',
+        textiles: '',
+        technique: 'acrylic on canvas',
         exhibition: '',
         workDescr: 'Vision and sensory perception of the city lights. Here, real city lights become flickering flashes, lining up in a discordant ornament. The sea line seems to cut off and emphasize the lights floating in the air and practically jumping over each other. It seems that they are about to line up in proper rows or switch their places, forming a new picture.',
         imgSrc: ['./images/works/gaeta.png'],

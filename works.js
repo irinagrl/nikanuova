@@ -58,12 +58,15 @@ function getPopCardElement(card) {
     const cardTemplate = document.querySelector('#popupCard__template').content;
     const cardElement = cardTemplate.cloneNode(true);
     cardElement.querySelector('.card__name').innerText = `${card.name}` + ', ' + `${card.size}`;
-    // cardElement.querySelector('.card__size').innerText = `${card.size}`;
     cardElement.querySelector('.card__textiles').innerText = 'Textiles: ' + `${card.textiles}` + '. ' + 'Technique: ' + `${card.technique}`;
-    // cardElement.querySelector('.card__technique').innerText = 'Technique: ' + `${card.technique}`;
-    cardElement.querySelector('.card__exhibition').href = card.website;
-    cardElement.querySelector('.card__exhibition').innerText = 'Exhibition: ' + card.exhibition;
     cardElement.querySelector('.card__descr').innerText = card.workDescr;
+
+    if (card.exhibition.length > 0) {
+        cardElement.querySelector('.card__exhibition_link').href = 'exhibitions.html';
+        cardElement.querySelector('.card__exhibition_link').innerText = card.exhibition;
+    } else {
+        cardElement.querySelector('.card__exhibition').style.display = 'none';
+    }
 
     return cardElement;
 }
