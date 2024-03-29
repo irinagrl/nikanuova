@@ -20,14 +20,14 @@
 
 .card__img {
     /*with crop*/
-    height: 400px;
+    /* height: calc(90vw*3/2);
     max-width: 90vw;
     object-fit: cover;
-    object-position: center;
+    object-position: center; */
 
     /*without crop*/
-    /* max-height: 500px;*/
-    /*  max-width: 90vw; */
+    max-height: calc(90vw*3/2);
+    max-width: 90vw;
 }
 
 .card__text {
@@ -68,12 +68,18 @@
     .card__text {
         margin-top: 0;
     }
+
+
+    .card__descr {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 720px) {
     .card__text {
         font-size: 20px;
     }
+
 
     .card__img {
         max-width: 100%;
