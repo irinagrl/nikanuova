@@ -1,42 +1,25 @@
 .header {
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 25px;
+    margin-bottom: 25px;
     margin-left: 20px;
 }
 
 .header__line {
     height: 1px;
     background: linear-gradient(90deg, rgba(60, 63, 64, 1) 0%, rgba(32, 36, 37, 1) 100%);
-    /* margin-bottom: 10px; */
 }
-
 
 .logo__img {
     width: 400px;
 }
 
-
 @media screen and (max-width: 720px) {
 
     .header {
-        margin: 0;
-        margin-bottom: 30px;
-        padding-top: 30px;
         margin-left: 10px;
     }
 
     .logo__img {
         width: 250px;
     }
-}
-
-
-@media screen and (max-width: 500px) {
-    .header {
-        /* padding-top: 50px; */
-        margin-bottom: 50px;
-    }
-
-
-
 }

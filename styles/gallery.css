@@ -9,32 +9,49 @@
 }
 
 .card {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     max-width: 100%;
     max-width: 90vw;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; */
+    /* margin-right: auto; */
+
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.card__img_link {
+    height: 580px;
+    width: 500px;
+    border: 1px solid red;
 }
 
 .card__img {
     /*with crop*/
     /* height: calc(90vw*3/2);
-    max-width: 90vw;
+    max-width: 90vw; */
+    height: 100%;
+    max-width: 100%;
     object-fit: cover;
-    object-position: center; */
+    object-position: center;
+    /* margin-left: auto;
+    margin-right: auto; */
 
     /*without crop*/
-    max-height: calc(90vw*3/2);
-    max-width: 90vw;
+    /* max-height: calc(90vw*3/2);
+    max-width: 90vw; */
 }
 
 .card__text {
     margin-top: 20px;
-    margin-bottom: 30px;
-    width: 100%;
+    /* margin-bottom: 30px; */
+    width: 250px;
     font-size: 16px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .card:hover {
@@ -57,31 +74,37 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 1024px) {
-    .card {
-        display: grid;
-        grid-template-columns: 350px auto;
-        column-gap: 30px;
-        margin-bottom: 50px;
-    }
-
-    .card__text {
-        margin-top: 0;
-    }
-
-
-    .card__descr {
-        font-size: 20px;
-    }
+.card__place {
+    font-size: 18px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 1160px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 500px auto; */
+        /* column-gap: 70px; */
+        margin-bottom: 50px;
+        position: static;
+    }
+
     .card__text {
+        position: static;
+    }
+
+
+    /* .card__descr {
         font-size: 20px;
+    } */
+}
+
+/* @media screen and (min-width: 720px) {
+    .card__text {
+        font-size: 18px;
     }
 
 
     .card__img {
         max-width: 100%;
     }
-}
+} */

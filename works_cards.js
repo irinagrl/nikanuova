@@ -48,7 +48,7 @@ const works = [
         technique: 'paper weaving',
         exhibition: 'Session 1',
         workDescr: 'FAITH is like a fragile substance: clear, white in color and light, giving an ability to fly. Our words, phrases, the flow of information around distort and  stain the reality and faith, it happens in any language, with no exceptions. It doesn’t let us fly.',
-        imgSrc: ['./images/works/faith.jpg', './images/works/faith-3.jpg', './images/works/faith-1.jpg', './images/works/faith-2.jpg'],
+        imgSrc: ['./images/works/faith-3.jpg', './images/works/faith-1.jpg', './images/works/faith-2.jpg'],
 
     }, {
         name: 'Sadness/ Frustration',

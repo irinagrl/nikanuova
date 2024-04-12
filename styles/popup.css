@@ -19,11 +19,14 @@
     visibility: hidden;
 }
 
+
+
 .popup__img_close {
     position: absolute;
     right: 20px;
     top: 50px;
     font-size: 40px;
+    font-weight: 700;
 }
 
 .main-carousel {
@@ -135,6 +138,7 @@ div.flickity-viewport {
     .carousel-cell {
         max-height: 1080px;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -188,4 +192,12 @@ div.flickity-viewport {
     .carousel-cell {
         max-height: 1080px;
     } */
+}
+
+/* @media screen and (min-width: 400px) {
+
+} */
+
+.card__text_popup {
+    width: 90vw;
 }
