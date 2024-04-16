@@ -79,8 +79,8 @@ body {
 
 .page__body {
     max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    /* margin-right: auto; */
     position: relative;
 }
 
@@ -119,18 +119,6 @@ body {
     }
 }
 
-@media screen and (max-width: 720px) {
-    .page {
-        display: block;
-        flex-direction: column;
-    }
-
-    .page__content {
-        width: 100%;
-        margin: 0;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .main__flex {
         justify-content: flex-start;
@@ -143,5 +131,24 @@ body {
 
     h3 {
         font-size: 16px;
+    }
+
+    .page__menu {
+        width: 0;
+    }
+
+    .page {
+        display: block;
+        flex-direction: column;
+    }
+
+    .page__body {
+        margin-left: 0px;
+    }
+
+    .page__content {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

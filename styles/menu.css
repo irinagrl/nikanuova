@@ -65,7 +65,7 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .menu__item {
         font-size: 18px;
     }
@@ -89,6 +89,7 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
+        z-index: -10;
     }
 
     #menu-toggle~.menu__list li {

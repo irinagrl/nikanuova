@@ -198,6 +198,7 @@ div.flickity-viewport {
 
 } */
 
-.card__text_popup {
+div.card__text_popup {
     width: 90vw;
+    position: static;
 }
