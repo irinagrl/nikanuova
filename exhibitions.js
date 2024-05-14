@@ -17,7 +17,7 @@ function getCardElement(card) {
 
     cardElement.querySelector('.card__img').src = card.imgSrc[0];
     cardElement.querySelector('.card__img').alt = card.name;
-    cardElement.querySelector('.card__place').href = card.website;
+    // cardElement.querySelector('.card__place').href = card.website;
     cardElement.querySelector('.card__place').innerText = card.place;
     cardElement.querySelector('.card__name').innerText = `${card.name}` + ', ' + `${card.dates}`;
     // cardElement.querySelector('.card__descr').innerText = card.descr;
@@ -77,6 +77,30 @@ function createPopupDiv(card) {
         const cardElement = document.createElement('div');
         cardElement.classList.add('carousel-cell');
 
+        // if (imgSrc[i].slice(-3) === 'mp4') {
+        //     console.log('video')
+        //     const cardVideo = document.createElement('video');
+        //     // cardVideo.classList.add('carousel-cell-video');
+        //     const cardVideoSrc = document.createElement('source');
+        //     // cardVideoSrc.classList.add('carousel-cell-videoSrc');
+        //     cardVideo.autoplay = "";
+        //     cardVideo.controls = "";
+
+        //     cardVideo.preload = "auto";
+        //     cardVideoSrc.src = imgSrc[i];
+        //     cardVideoSrc.type = "video/mp4";
+        //     // cardImg.alt = card.name;
+
+        //     slider.appendChild(cardElement);
+        //     cardElement.appendChild(cardVideo);
+        //     cardVideo.appendChild(cardVideoSrc);
+
+
+        //     //         <video muted preload="metadata" poster="">
+        //     //     <source src="https://videos.ctfassets.net/ckso4uqg4vio/J3PqiXvewahaGsBkPfUDx/7a88b0f7a5410f6f034451ed70c50393/Coke_.mp4" type="video/mp4" />
+        //     //   </video>
+        // } else {
+
         const cardImg = document.createElement('img');
         cardImg.classList.add('carousel-cell-img');
         cardImg.src = imgSrc[i];
@@ -84,7 +108,7 @@ function createPopupDiv(card) {
 
         slider.appendChild(cardElement);
         cardElement.appendChild(cardImg);
-
+        // }
     }
 
     var flkty = new Flickity(slider, {

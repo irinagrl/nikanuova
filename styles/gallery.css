@@ -45,6 +45,7 @@
 
 .card__text {
     margin-top: 20px;
+    /* margin-left: 10px; */
     /* margin-left: 20px;
     margin-right: auto; */
     /* margin-bottom: 30px; */
@@ -111,5 +112,9 @@
 
     .card__img {
         max-width: 100%;
+    }
+
+    .card__text {
+        margin-left: 10px;
     }
 }

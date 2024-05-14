@@ -40,11 +40,11 @@ window.addEventListener('resize', reload);
 
 function menuOpenHandler() {
     const container = document.querySelector('.menu__list');
-    if (container.classList.contains('menu_open') === false) {
-        container.classList.add('menu_open');
+    if (container.classList.contains('menu__open') === false) {
+        container.classList.add('menu__open');
         container.style.visibility = 'visible';
     } else {
-        container.classList.remove('menu_open');
+        container.classList.remove('menu__open');
         container.style.visibility = 'hidden';
     }
 

@@ -7,7 +7,7 @@ const works = [
         technique: 'hand stitching',
         exhibition: 'Vogue 3 edition, Orizzonti',
         workDescr: 'The explosion of emotions, the contrast of feelings is exciting. It is difficult to define with one vector, but this is an explosion of overflowing states. We do not allow ourselves to feel simple rejoice, but it is impossible to stop the overwhelming movement of joy that is experienced by the child inside us. Overflowing with emotions, the desire for movement, brightness. As soon as joyful emotions capture us, the next step is a contrasting feeling that tries to break through and unbalance, shatter us from the inside.',
-        imgSrc: ['./images/works/joy.jpg', './images/works/anxious-joy-2.jpg', './images/works/anxious-joy-3.jpg', './images/works/anxious-joy-4.jpg'],
+        imgSrc: ['./images/works/joy.jpg', './images/works/joy2.jpg', './images/works/anxious-joy-2.jpg', './images/works/anxious-joy-3.jpg', './images/works/anxious-joy-4.jpg'],
 
     }, {
         name: 'Emptiness',
@@ -40,7 +40,7 @@ const works = [
         technique: 'hand stitching',
         exhibition: '',
         workDescr: 'The dark city. The Shimmering city. The city is never completely dark at night. There are always twinkling lights, lanterns, bright, lively windows. It gives a sense of warmth even if the mood is “November” and everything is very gloomy.',
-        imgSrc: ['./images/works/city.jpg', './images/works/city-3.jpg', './images/works/city-4.jpg'],
+        imgSrc: ['./images/works/city.jpg', './images/works/city1.jpg', './images/works/city2.jpg', './images/works/city-3.jpg', './images/works/city-4.jpg'],
     }, {
         name: 'Faith',
         size: '160x238 cm',
@@ -48,8 +48,16 @@ const works = [
         technique: 'paper weaving',
         exhibition: 'Session 1',
         workDescr: 'FAITH is like a fragile substance: clear, white in color and light, giving an ability to fly. Our words, phrases, the flow of information around distort and  stain the reality and faith, it happens in any language, with no exceptions. It doesn’t let us fly.',
-        imgSrc: ['./images/works/faith-3.jpg', './images/works/faith-1.jpg', './images/works/faith-2.jpg'],
+        imgSrc: ['./images/works/faith-3.jpg', './images/works/faith.jpg', './images/works/faith-1.jpg', './images/works/faith-2.jpg'],
 
+    }, {
+        name: 'Portrait',
+        size: '250х100 cm',
+        textiles: '',
+        technique: 'acrylic on canvas',
+        exhibition: '',
+        workDescr: 'Vision and sensory perception of the city lights. Here, real city lights become flickering flashes, lining up in a discordant ornament. The sea line seems to cut off and emphasize the lights floating in the air and practically jumping over each other. It seems that they are about to line up in proper rows or switch their places, forming a new picture.',
+        imgSrc: ['./images/works/portrait.jpg', './images/works/por1.jpg', './images/works/por2.jpg'],
     }, {
         name: 'Sadness/ Frustration',
         size: '125х50 cm',
@@ -73,7 +81,7 @@ const works = [
         technique: 'hand stitching',
         exhibition: '',
         workDescr: 'A tree leaf is a harmonious natural image, a symbol of the naturalness and depth of nature. Looking at it, we experience gentle calm. Plunging into the depths of your own inner nature, you can contemplate water and mountains for endless time. This image clearly traces the trend of folk traditions, the analogy with the textile ethnic blankets technique. Small multi – colored pieces convey the sense of calm and equanimity of nature, a harmonious shimmer of water and greenery colors.',
-        imgSrc: ['./images/works/lake.jpg', './images/works/the-leaf-lake-2.jpg', './images/works/the-leaf-lake-3.jpg'],
+        imgSrc: ['./images/works/lake.jpg', './images/works/lake1.jpg', './images/works/lake2.jpg', './images/works/lake3.jpg', './images/works/the-leaf-lake-2.jpg', './images/works/the-leaf-lake-3.jpg'],
     }, {
         name: 'Dreams',
         size: '140x56 cm',
@@ -81,7 +89,7 @@ const works = [
         technique: 'hand stitching',
         exhibition: '',
         workDescr: 'It is only in dreams while sleeping, that we lose ourselves along with the sense of body. We have no clear contours, no age, no experience, no specific past, present and future. It seems that we become free and can travel in time and space. But we still travel through the palaces of our minds, through our lives, through our mistakes and triumphs, through our experiences, including those handed down through generations. It’s as if all of it grounds us and our lightness of being during a dream.',
-        imgSrc: ['./images/works/dreams.jpg', './images/works/dreams-2.jpg', './images/works/dreams-3.jpg'],
+        imgSrc: ['./images/works/dreams.jpg', './images/works/dream.jpg', './images/works/dreams-2.jpg', './images/works/dreams-3.jpg'],
     }, {
         name: 'Female Warmth',
         size: '220x140 cm',
@@ -89,7 +97,7 @@ const works = [
         technique: 'hand stitching',
         exhibition: '',
         workDescr: 'The warmth of a mother, the warmth of a sister, the warmth of a friend. A woman’s warmth, soft, streamlined, calm, like nature itself. The feeling of total acceptance, stability. Different shades of a warm palette flowing one into the other. Smooth lines, directed to the centre, create a light, airy vortex, which picks up and envelopes with feminine warmth. ',
-        imgSrc: ['./images/works/Female-Warmth.jpg', './images/works/Female-Warmth-2.jpg', './images/works/Female-Warmth-3.jpg', './images/works/Female-Warmth-4.jpg'],
+        imgSrc: ['./images/works/Female-Warmth.jpg', './images/works/women.jpg', './images/works/women2.jpg', './images/works/Female-Warmth-2.jpg', './images/works/Female-Warmth-3.jpg', './images/works/Female-Warmth-4.jpg'],
     }, {
         name: 'Clouds',
         size: '130x168 cm',
@@ -97,7 +105,7 @@ const works = [
         technique: 'acrylic on canvas',
         exhibition: '',
         workDescr: 'We look up and fold dreams into ornaments. The transparent layers gradually fill in and create volume. No matter, whether you’re soaring into the air or diving into water, you experience a sense of weightlessness.',
-        imgSrc: ['./images/works/clouds.jpg', './images/works/clouds-1.jpg'],
+        imgSrc: ['./images/works/clouds.jpg', './images/works/cloud.jpg', './images/works/cloud2.jpg', './images/works/clouds-1.jpg'],
 
     }, {
         name: 'Gaeta',
@@ -106,6 +114,7 @@ const works = [
         technique: 'acrylic on canvas',
         exhibition: '',
         workDescr: 'Vision and sensory perception of the city lights. Here, real city lights become flickering flashes, lining up in a discordant ornament. The sea line seems to cut off and emphasize the lights floating in the air and practically jumping over each other. It seems that they are about to line up in proper rows or switch their places, forming a new picture.',
-        imgSrc: ['./images/works/gaeta.jpg'],
+        imgSrc: ['./images/works/gaeta.jpg', './images/works/gaete(1).jpg', './images/works/gaete.jpg'],
     },
+
 ]

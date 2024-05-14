@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 120px;
+    margin-top: 20px;
 }
 
 .contacts__item_link {
@@ -67,10 +68,10 @@
 }
 
 @media screen and (max-width: 1110px) {
-    /* .contacts__info {
-        margin-bottom: 30px;
+    .contacts__info {
+        /* margin-bottom: 30px; */
         padding-left: 20px;
-    } */
+    }
 
     /* .contacts__form {
         width: 100%;
