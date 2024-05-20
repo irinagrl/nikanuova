@@ -1,4 +1,4 @@
 # nikanuova
-Nika Nuova, a textile artist based in Italy.
+a profile website for a textile artist Nika Nuova.
 
 https://irinagrl.github.io/nikanuova/
